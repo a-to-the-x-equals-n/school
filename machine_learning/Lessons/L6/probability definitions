@@ -1,0 +1,14 @@
+A probability function, P(), returns the probability of a
+feature taking a specific value.
+
+A joint probability refers to the probability of an
+assignment of specific values to multiple different features.
+
+A conditional probability refers to the probability of one
+feature taking a specific value given that we already know
+the value of a different feature
+
+A probability distribution is a data structure that
+describes the probability of each possible value a feature
+can take. The sum of a probability distribution must equal
+1.0.

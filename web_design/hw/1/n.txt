@@ -1,0 +1,11 @@
+# init project
+npm init -y
+
+# start server
+npx http-server
+
+# find server pid
+lsof -i :8080
+
+# kill server process
+kill -9 <pid>

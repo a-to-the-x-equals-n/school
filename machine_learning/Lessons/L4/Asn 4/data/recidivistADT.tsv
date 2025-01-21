@@ -1,0 +1,7 @@
+ID	Good Behavior	Age Below 30	Drug Dependent	Recidivist
+1	false	true	false	true
+2	false	false	false	false
+3	false	true	false	true
+4	true	false	false	false
+5	true	false	true	true
+6	true	false	false	false

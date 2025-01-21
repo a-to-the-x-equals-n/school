@@ -1,0 +1,6 @@
+ID	Smoker	Obese	Risk
+1	false	false	low
+2	true	false	high
+2	true	false	high
+4	true	true	high
+5	true	true	high

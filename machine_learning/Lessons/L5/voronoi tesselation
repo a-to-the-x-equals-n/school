@@ -1,0 +1,4 @@
+voronoi tesselation
+
+decomposing a space into regions, in which each region belongs to an instance and contains all the points 
+in the space whose distances to that instance is less than the distance to any other instance

@@ -1,0 +1,14 @@
+                      
+     ROWS  :  COLUMNS
+[start, end: start, end]
+    [_ , _ : _ , _]
+   df.iloc[:, 1:3]
+
+
+# Excludes the last column
+df[df.columns[:-1]]  
+
+# Boolean filtering
+filtered_data = df.iloc[df['column1'] > 5, [0, 3]]
+
+If target[axis] is greater than or equal to tree_root.item[axis], it suggests that the target point lies to the right of the tree_root node along the axis, so the search should proceed to the right subtree.

@@ -1,0 +1,35 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: monospace;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 350px; 
+}
+
+#container {
+    display: inline-block;
+    position: relative;
+}
+
+#text {
+    display: inline-block;
+    position: relative;
+}
+
+#cursor {
+    display: inline-block;
+    width: 14px;
+    height: 28px;
+    background-color: #0f0;
+    animation: blink 1s infinite step-end;
+    position: relative;
+    margin-left: -10px;
+    vertical-align: bottom;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

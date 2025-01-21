@@ -1,0 +1,6 @@
+ID	Chest Pain	Blood Pressure	Heart Disease
+1	false	high	false
+2	true	low	true
+3	false	low	false
+4	true	high	true
+5	false	high	false

@@ -1,0 +1,10 @@
+ID,Occupation,Gender,Age,Policy Type,Pref Channel
+1,lab tech,female,43,planC,email
+2,farmhand,female,57,planA,phone
+3,biophysicist,male,21,planA,email
+4,sheriff,female,47,planB,phone
+5,painter,male,55,planC,phone
+6,manager,male,19,planA,email
+7,geologist,male,49,planC,phone
+8,messenger,male,51,planB,email
+9,nurse,female,18,planC,phone

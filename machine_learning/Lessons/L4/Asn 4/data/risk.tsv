@@ -1,0 +1,6 @@
+ID	Exercise	Smoker	Obese	Family	Risk
+1	daily	false	false	yes	low
+2	weekly	true	false	yes	high
+3	daily	false	false	no	low
+4	rarely	true	true	yes	high
+5	rarely	true	true	no	high

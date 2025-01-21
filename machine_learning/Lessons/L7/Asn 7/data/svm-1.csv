@@ -1,0 +1,5 @@
+AGE,BMI,BLOOD PRESSURE,RISK
+-0.4549,0.0095,0.2203,low risk
+-0.2843,-0.5253,0.3668,low risk
+0.3729,0.0904,-1.0836,high risk
+0.558,0.2217,0.2115,high risk
