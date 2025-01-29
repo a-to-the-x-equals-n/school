@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbs Up/Down Interaction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="rating-container">
+        <img id="thumbsUp" src="thumbs-up.png" alt="Thumbs Up">
+        <img id="thumbsDown" src="thumbs-down.png" alt="Thumbs Down">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+.rating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+}
+
+.rating-container img {
+    width: 50px; /* Adjust image size */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Highlight the selected image */
+.selected {
+    transform: scale(1.2); /* Slightly enlarges the selected image */
+    opacity: 1; /* Ensures full opacity */
+}
+
+/* Dims the non-selected image */
+.deselected {
+    opacity: 0.4;
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const thumbsUp = document.getElementById("thumbsUp");
+    const thumbsDown = document.getElementById("thumbsDown");
+
+    function selectThumb(selected, other) {
+        if (selected.classList.contains("selected")) {
+            // If already selected, remove all styles
+            selected.classList.remove("selected");
+            other.classList.remove("deselected");
+        } else {
+            // Select new thumb and deselect the other
+            selected.classList.add("selected");
+            other.classList.add("deselected");
+            other.classList.remove("selected");
+        }
+    }
+
+    // Event listeners for clicks
+    thumbsUp.addEventListener("click", () => selectThumb(thumbsUp, thumbsDown));
+    thumbsDown.addEventListener("click", () => selectThumb(thumbsDown, thumbsUp));
+});
