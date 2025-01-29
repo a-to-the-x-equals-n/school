@@ -1,0 +1,76 @@
+<!-- The <!DOCTYPE html> declaration defines this document to be HTML5 -->
+<!-- All HTML documents must start with a document type declaration: <!DOCTYPE html>. -->
+<!DOCTYPE html>
+
+<!-- The <html> element is the root element of an HTML page -->
+<!-- The HTML document itself begins with <html> and ends with </html>. -->
+<html>
+
+  <!-- The <head> element contains meta information about the document -->
+  <head>
+  	<!-- The <title> element specifies a title for the document -->
+  	<title>CSCI ECU</title>
+  	<meta charset="UTF-8">
+
+  	<style>
+  		table {
+  		  width:50%;
+  		}
+  		table, th, td {
+  		  border: 1px solid black;
+        /*merge borders*/
+  		  border-collapse: collapse;
+  		}
+  		th, td {
+  		  padding: 15px;
+  		  text-align: left;
+  		}
+  	</style>
+  </head>
+
+
+  <!-- The <body> element contains the visible page content -->
+  <body>
+
+
+    <!-- This is half page width -->
+    <!-- We will learn more about style in next class -->
+    <table>
+      <caption>Monthly savings</caption>
+      <!-- defines row -->
+      <tr>
+      	<!-- defines a header cell in a row  -->
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+      	<!-- defines a header cell in a row  -->
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+
+    <table>
+      <caption>Monthly savings 2</caption>
+      <!-- defines row -->
+      <tr>
+        <td>Month</td>
+        <td>Savings</td>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+      	<!-- if you use <th> here -->
+        <th>February</th>
+        <th>$50</th>
+      </tr>
+    </table>
+
+  </body>
+</html>
