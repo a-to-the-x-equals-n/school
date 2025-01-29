@@ -1,0 +1,31 @@
+h1 {
+    color: #d1d10d;
+    text-align: center;
+    font-size: 75px;
+}
+
+img {
+    width: 300px;  
+    height: 300px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block;
+    margin: auto;
+    border: 5px solid #d1d10d;
+}
+
+body {
+    font-family: "Comic Neue", sans-serif;
+    background-color: #06000a;
+}
+
+p {
+    margin: auto;
+    padding: 50px;
+    max-width: 1200px;
+    color: #df62e3;
+    font-size: 24px;
+    text-align: center;
+}
+
+
