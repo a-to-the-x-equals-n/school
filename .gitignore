@@ -1,0 +1,65 @@
+# ---------------------
+# General Git Ignore
+# ---------------------
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# ---------------------
+# Python & Virtual Environment
+# ---------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.whl
+*.egg-info/
+dist/
+build/
+.env
+*.venv/
+venv/
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# ---------------------
+# Jupyter Notebooks
+# ---------------------
+.ipynb_checkpoints/
+.jupyter/
+.jupyterlab-settings/
+*.ipynb~  # Backup files
+
+# ---------------------
+# VS Code
+# ---------------------
+.vscode/
+.history/
+*.code-workspace
+
+# ---------------------
+# Node.js (for JavaScript projects)
+# ---------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# ---------------------
+# Frontend (JavaScript, HTML, CSS)
+# ---------------------
+*.min.js
+*.map
+*.log
+*.bak
+
+# ---------------------
+# Miscellaneous
+# ---------------------
+*.swp
+*.swo
+*.swn
+*.tmp
+*.log
