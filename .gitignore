@@ -65,3 +65,4 @@ package-lock.json
 *.swn
 *.tmp
 *.log
+nlp/hw/1/hidden/
