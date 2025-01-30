@@ -5,8 +5,8 @@
 # Ignore system files
 .DS_Store
 Thumbs.db
-*hidden/
-web_design/examples/*
+hidden/
+web_design/examples/
 
 # ---------------------
 # Python & Virtual Environment
