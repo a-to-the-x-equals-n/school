@@ -77,7 +77,7 @@ body {
 
 .content {
     display: flex;  /* aligns items in a row */
-    align-items: centert; /* Aligns text and image to the left */
+    align-items: center; /* Aligns text and image to the left */
     text-align: left;
     color: #93e0e3;
     margin-left: 220px;
