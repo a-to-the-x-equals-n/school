@@ -1,26 +1,14 @@
 const CURSOR = document.getElementById('cursor');
 
-const HAPPY_LIST = [
-    "You make the world brighter!",
-    "Your kindness is inspiring!",
-    "The world is lucky to have you!",
-    "You are stronger than you know!",
-    "Your energy is contagious!",
-    "You bring joy to others!",
-    "You're just... beautiful!",
-    "You make people feel valued!",
-    "Being with you makes others feel safe!",
-    "Let's get this bread."
-];
+const HAPPY_LIST = [];
 
 
 function todays_msg()
 {
     let randomIndex = Math.floor(Math.random() * HAPPY_LIST.length);
     return [
-        "Welcome...",
-        "It's so good to see you ^.^ ",
-        HAPPY_LIST[randomIndex] // random message
+        "[goose expletive]"
+        // HAPPY_LIST[randomIndex] // random message
     ];
 }
 
