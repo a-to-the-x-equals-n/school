@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <!--Load the Google Chart API-->
+    <!-- If you want to use Google Chart, you need to import this library -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(myDrawChart);
+
+      // this is how we define "date", maximum 7 numbers specify year, month, day, hour, minute, second, and millisecond 
+      var time_stamp = //TODO;
+
+      function myDrawChart() {
+        // another way to define a data table, arraryToDataTable
+        var data = google.visualization.arrayToDataTable([
+          ['Time', 'Human', 'Vampire'],
+          // TODO
+        ]);
+
+        var options = {
+          title: 'Vampire Changes',
+          // this smooths your line chart
+          // curveType: 'function',
+          legend: { position: 'bottom' }
+          // legend: { position: 'right' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+
+
+
+<div>
+  <p>Vampire VS Human line graph:</p>
+  <!--Div that will hold the line chart-->
+  <div id="curve_chart" style="width: 900px; height: 500px"></div>
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <!--Load the Google Chart API-->
+    <!-- If you want to use Google Chart, you need to import this library -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      var chart;
+      var data;
+      var options;
+      var num_human = 60;
+      var num_vampire = 5;
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        data = new google.visualization.DataTable();
+        data.addColumn('string', 'Element');
+        data.addColumn('number', 'Number');
+        data.addRows([
+          ['Human', num_human],
+          ['Vampire', num_vampire]
+        ]);
+
+        // Set chart options
+        options = {'title':'How many vampires in the class?',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+
+      function convert_vampire(){
+        // var magic
+        if(num_vampire == 1){
+          window.alert("Only one vampire left. No more conversion.");
+        }
+        else if(num_vampire == 2){
+          window.alert("Only two vampires left. Mercy please.");
+          num_vampire -= 1;
+          // num_vampire = num_vampire - 1；
+          num_human += 1; 
+          data.removeRow(1);
+          data.removeRow(0);
+          data.insertRows(0, [['Human', num_human]]);
+          data.insertRows(1, [['Vampire', num_vampire]]);
+          chart.draw(data, options);
+        }
+        else {
+          num_vampire -= 1;
+          num_human += 1; 
+          data.removeRow(1);
+          data.removeRow(0);
+          data.insertRows(0, [['Human', num_human]]);
+          data.insertRows(1, [['Vampire', num_vampire]]);
+          
+          // // try this and think why the color is reversed?
+          // data.insertRows(0, [['Human', num_human]]);
+          // data.insertRows(0, [['Vampire', num_vampire]]);
+
+          // update method can be used to replace remove and insert
+          // 0, 1 means the first row, second col
+          // data.setValue(0, 1, num_human);
+          // 1, 1 means the second row, second col
+          // data.setValue(1, 1, num_vampire);
+          chart.draw(data, options);
+        }
+      }
+    </script>
+</head>
+<body>
+
+
+
+<div>
+  <p>Current vampire percentage pie graph:</p>
+  <!--Div that will hold the pie chart-->
+  <div id="chart_div"></div>
+
+  <p>Convert a vampire into a normal person by clicking the button below.</p>
+  <button type = "button" onclick="convert_vampire()"> Convert </button>
+</div>
+</body>
+</html> 

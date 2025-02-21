@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Show Vampire Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>View</h2>
+  <p id='p_vampire'>The result will be generated from the "Model" component.</p>
+
+  <button type="button" onclick="document.getElementById('p_vampire').innerHTML = 'John Doe is the vampire!'">Get Results!</button>
+
+ 
+
+  <table class="table">
+    <caption>Change Color</caption>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="student_01">
+        <td>John</td>
+        <td>Doe</td>
+        <td title='description is here'>john@example.com</td>
+      </tr>
+      <tr id="student_02">
+        <td>Mary</td>
+        <td>Moe</td>
+        <td title='description is here'>mary@example.com</td>
+      </tr>
+      <tr id="student_03">
+        <td>July</td>
+        <td>Dooley</td>
+        <td title='description is here'>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- JavaScript Part -->
+  <button type="button" onclick="document.getElementById('student_01').style.color='red'">Show Vampires!</button>
+
+
+  <table class="table">
+    <caption>Remove Rows</caption>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="student_11">
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr id="student_12">
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr id="student_13">
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- JavaScript Part -->
+  <button type="button" onclick="document.getElementById('student_12').style.display='none'; document.getElementById('student_13').style.display='none'">Show Vampires!</button>
+
+  <table class="table">
+    <caption>Icons</caption>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="student_21">
+        <td>John</td>
+        <td>Doe</td>
+        
+      </tr>
+      <tr id="student_22">
+        <td>Mary</td>
+        <td>Moe</td>
+        
+      </tr>
+      <tr id="student_23">
+        <td>July</td>
+        <td>Dooley</td>
+      
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- JavaScript Part -->
+  <button onclick="">Show Vampires!</button>
+
+
+  <p>Vampires are:</p>
+  <p id="result_paragraph" style="display:none">John Doe</p>
+
+  <!-- JavaScript Part -->
+  <button type="button" onclick="document.getElementById('result_paragraph').style.display='block'">Show Vampires!</button>
+</div>
+
+</body>
+</html>

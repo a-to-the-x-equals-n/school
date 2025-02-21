@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Show Vampire Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- our js -->
+  <script src="example_17.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>View</h2>
+  <table class="table">
+    <caption>Icons</caption>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Icon</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="student_1">
+        <td>John</td>
+        <td>Doe</td>
+        <td><img id="student_1_image" src="src/human.png" style="width:30px"></td>
+      </tr>
+      <tr id="student_2">
+        <td>Mary</td>
+        <td>Moe</td>
+        <td><img id="student_2_image" src="src/human.png" style="width:30px"></td>
+      </tr>
+      <tr id="student_3">
+        <td>July</td>
+        <td>Dooley</td>
+        <td><img id="student_3_image" src="src/human.png" style="width:30px"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" onclick="show_vampire()">Show Vampire</button>
+
+</div>
+
+</body>
+</html>

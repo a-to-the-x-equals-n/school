@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Where to define?</title>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+
+  <script src="example_16.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Where</h2>
+  <p id="demo">A Paragraph.</p>
+
+  <button type="button" onclick="myFunction()">Change Text</button>
+
+  <!-- If you place this in the body, it also works. -->
+  <!-- <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script> -->
+
+  <p id="demo1">External change color.</p>
+  <button type="button" onclick="myFunction1()">Change Color</button>
+</div>
+
+</body>
+</html>

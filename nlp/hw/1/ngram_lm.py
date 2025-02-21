@@ -1,6 +1,6 @@
 from math import log, exp
 from collections import defaultdict, Counter
-import hw1_util as util
+import util as util
 
 DATA = {'test': '', 'train': '', 'valid': ''}
 

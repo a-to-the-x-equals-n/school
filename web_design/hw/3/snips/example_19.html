@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script>
+    function is_vampire(){
+      // 0 means no; 1 means yes
+      // var galic = 0;
+      // var shadow = 0;
+      var galic = 1;
+      var shadow = 1;
+      // conditional expression
+      var status = (galic+shadow >= 2) ? "no" : "not sure";
+      window.alert(status);
+
+      document.getElementById("demo").innerHTML = 
+      "If a JavaScript statement does not fit on one line, \
+      the best place to break it is after an operator.";
+    }
+    
+    function is_vampire_2(){
+      var galic = document.getElementById("galic_id").value;
+      var shadow = document.getElementById("shadow_id").value;
+      // conditional expression
+      var status = (galic+shadow >= 2) ? "no" : "not sure";
+      window.alert(status);
+
+      console.log("galic value is:"+galic.toString());
+      console.log("shadow value is:"+shadow.toString());
+    }
+  </script>
+</head>
+<body>
+
+
+
+<div>
+  <p>Is your classmate a vampire?</p>
+  <button type="button" onclick="is_vampire()">Show result.</button>
+  <p id="demo"></p>
+
+ <!-- group activity 4 -->
+  <form>
+    <label for="garlic_id">If eat galic input 1, else input 0</label>
+    <input type="number" id="galic_id" min="0" max="1"><br><br>
+    <label for="shadow_id">If the student has shadow input 1, else input 0</label>
+    <input type="number" id="shadow_id" min="0" max="1"><br><br>
+  </form>
+
+  <button type="button" onclick="is_vampire_2()">Group Activity 4</button>
+
+</div>
+</body>
+</html> 
